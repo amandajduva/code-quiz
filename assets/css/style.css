@@ -20,15 +20,34 @@ body {
     margin: auto;
     width: 60%;
     font-size: 20px;
+}
 
+#highscores-page {
+    justify-content: center;
+    margin-left: 30%;
+    margin-top: 8%;
+    width: 60%;
+    font-size: 20px;
 }
 
 button {
     background-color: #2c045a;
+    border-color: #2c045a;
     color: white;
     font-size: 20px;
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 8px;
+}
+
+button:hover {
+    background-color: #BF40BF;
+    border-color: #BF40BF;
+}
+
+#questions {
+    margin: auto;
+    width: 60%;
+    font-size: 20px;
 }
