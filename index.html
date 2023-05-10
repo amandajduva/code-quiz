@@ -13,14 +13,14 @@
         <a href="highscores.html">View Highscores</a>
         <p class="timer">Timer: </p>
     </div>
-    <div id="opening-page">
+    <div id="opening-page" data-state="visible">
         <h1>Coding Quiz Challenge</h1>
         <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers
             will penalize your score/time by ten seconds!</p>
         <button id="start-quiz">Start Quiz</button>
     </div>
     <div id="container">
-        <div class="questions" data-number="1" data-state="hidden">
+        <!-- <div class="questions" data-number="0" data-state="hidden">
             <h1>Commonly used data types DO NOT include:</h1>
             <ol class="answer-options">
                 <li data-correct="no">strings</li>
@@ -29,7 +29,7 @@
                 <li data-correct="no">numbers</li>
             </ol>
         </div>
-        <div class="questions" data-number="2" data-state="hidden">
+        <div class="questions" data-number="1" data-state="hidden">
             <h1>The condition in an if / else statement is enclosed within ____.</h1>
             <ol class="answer-options">
                 <li data-correct="no">quotes</li>
@@ -38,7 +38,7 @@
                 <li data-correct="no">square brackets</li>
             </ol>
         </div>
-        <div class="questions" data-number="3" data-state="hidden">
+        <div class="questions" data-number="2" data-state="hidden">
             <h1>Arrays in JavaScript can be used to store ____.</h1>
             <ol class="answer-options">
                 <li data-correct="no">numbers and strings</li>
@@ -47,7 +47,7 @@
                 <li data-correct="yes">all of the above</li>
             </ol>
         </div>
-        <div class="questions" data-number="4" data-state="hidden">
+        <div class="questions" data-number="3" data-state="hidden">
             <h1>String values must be enclosed within ____ when being assigned to variables.</h1>
             <ol class="answer-options">
                 <li data-correct="no">commas</li>
@@ -56,7 +56,7 @@
                 <li data-correct="no">parentheses</li>
             </ol>
         </div>
-        <div class="questions" data-number="5" data-state="hidden">
+        <div class="questions" data-number="4" data-state="hidden">
             <h1>A very useful tool used during development and debugging for printing content to the debugger is:</h1>
             <ol class="answer-options">
                 <li data-correct="no">JavaScript</li>
@@ -64,7 +64,12 @@
                 <li data-correct="no">for loops</li>
                 <li data-correct="yes">console.log</li>
             </ol>
-        </div>
+        </div> -->
+    </div>
+    <div class = "game-over hidden">
+        <h1>Your Score is <span id = "score"></span></h1>
+        <input type = "text">
+        <button id = "save">Save Score</button> 
     </div>
     <script src="./assets/js/script.js"></script>
 </body>

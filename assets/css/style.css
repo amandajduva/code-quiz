@@ -52,10 +52,10 @@ button:hover {
     font-size: 20px;
 }
 
-.questions {
-    display: none;
-}
-
 .hidden {
     display: none;
 }
+
+/* .questions {
+    display: none;
+} */
