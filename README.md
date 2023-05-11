@@ -14,7 +14,7 @@ Screenshot of deployed application:
 
 ## Credits
 
-While I wrote the code for this application, I received support from received support from a tutor to add to existing functions and to create new functions that dissplay the questions and highscores correctly. 
+While I wrote the code for this application, I received support from received support from a tutor to add to existing functions and to create new functions that display the questions and highscores correctly. 
 
 ## License
 
