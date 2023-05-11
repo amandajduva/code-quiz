@@ -50,6 +50,7 @@ function displayQuestions() {
     currentQuestion.choices.forEach(function (choice) {
         let btn = document.createElement("button");
         btn.textContent = choice;
+        btn.setAttribute("style", "display: flex; flex-direction: column; margin: 8px");
         btn.onclick = checkAnswer;
         answersEl.append(btn);
     })
@@ -85,22 +86,6 @@ function startQuiz() {
 startButton.addEventListener("click", function (event) {
     event.preventDefault();
     startQuiz();
-
-    let element = event.target;
-
-    if (element.matches(".questions")) {
-        let state = element.getAttribute("data-state");
-
-        if (state === "hidden") {
-            element.textContent = element.dataset.number;
-            element.dataset.state = "visible";
-
-        } else {
-            element.textContent = "";
-            element.setAttribute("data-state", "hidden")
-
-        }
-    }
 })
 
 // timer
