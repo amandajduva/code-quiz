@@ -1,5 +1,5 @@
 // list of all questions, choices, and answers
-var questions = [
+let questions = [
     {
         title: 'Commonly used data types DO NOT include:',
         choices: ['strings', 'booleans', 'alerts', 'numbers'],
@@ -36,7 +36,6 @@ var questions = [
 
 let currentIndex = 0;
 let timeEl = document.querySelector(".timer");
-// let questions = document.querySelectorAll(".questions");
 let options = document.querySelector(".answer-options");
 let startButton = document.getElementById("start-quiz");
 let secondsLeft = 75;
@@ -81,8 +80,6 @@ function startQuiz() {
     openingPage.setAttribute("class", "hidden");
     setTime();
     displayQuestions();
-
-    //    questions.removeAttribute("class")
 }
 
 startButton.addEventListener("click", function (event) {
@@ -120,8 +117,6 @@ function setTime() {
         if (secondsLeft === 0) {
             // Stops execution of action at set interval
             clearInterval(timerInterval);
-            // when time is out -- gameover and redirected to enter initials
-            // call function for gameover
         }
 
     }, 1000);
@@ -132,14 +127,14 @@ function gameOver() {
     document.querySelector(".game-over").classList.remove("hidden");
     document.querySelector("#container").classList.add("hidden");
     document.querySelector("#score").textContent = secondsLeft;
-    document.querySelector("#save").addEventListener("click", function() {
+    document.querySelector("#save").addEventListener("click", function () {
         let initials = document.querySelector("input").value;
         let newScore = {
-            initals:initials, score:secondsLeft
+            initals: initials, score: secondsLeft
         }
-        let highScores = JSON.parse(localStorage.getItem("scores")) || []
-        highScores.push(newScore)
-        localStorage.setItem("scores", JSON.stringify(highScores))
+        let highScores = JSON.parse(localStorage.getItem("scores")) || [];
+        highScores.push(newScore);
+        localStorage.setItem("scores", JSON.stringify(highScores));
         window.location.href = "highscores.html"
     })
 }
